@@ -2,46 +2,24 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>김도훈</title>
     <style>
-        * {
+        body {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-color: #000;
-            color: #fff;
-            font-family: 'Arial Black', sans-serif;
-            font-size: 5vw;
+            height: 100vh;
+            background-color: black;
+            color: white;
             display: flex;
-            flex-wrap: wrap;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            overflow: hidden;
-            line-height: 1;
-        }
-
-        span {
-            margin: 10px;
-            opacity: 0.9;
-            animation: pulse 2s infinite alternate;
-        }
-
-        @keyframes pulse {
-            from { transform: scale(1); opacity: 0.8; }
-            to { transform: scale(1.1); opacity: 1; color: #00ffff; }
+            font-size: 8rem;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
         }
     </style>
 </head>
 <body>
-    <script>
-        for(let i = 0; i < 200; i++) {
-            document.write('<span>김도훈</span>');
-        }
-    </script>
+    김도훈
 </body>
 </html>
