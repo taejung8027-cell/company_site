@@ -2,17 +2,46 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>우리 회사 소개</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김도훈</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: 'Arial Black', sans-serif;
+            font-size: 5vw;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            line-height: 1;
+        }
+
+        span {
+            margin: 10px;
+            opacity: 0.9;
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { transform: scale(1); opacity: 0.8; }
+            to { transform: scale(1.1); opacity: 1; color: #00ffff; }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>🏢 우리 회사</h1>
-        <p>신뢰와 혁신으로 미래를 여는 기업</p>
-    </header>
-    <section>
-        <h2>회사 소개</h2>
-        <p>우리 회사는 기술과 열정으로 더 나은 세상을 만듭니다.</p>
-    </section>
+    <script>
+        for(let i = 0; i < 200; i++) {
+            document.write('<span>김도훈</span>');
+        }
+    </script>
 </body>
 </html>
